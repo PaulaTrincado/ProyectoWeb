@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viajes Diamante</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/pearl.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Reserva tu cita</h1>
+        <form action="server.php" method="post">
+            Nombre: <input type="text" name="user_firstname" id="nombre" placeholder="Tu nombre"><br>
+            Apellidos: <input type="text" name="user_lastname" id ="apellidos" placeholder="Tu nombre"><br>
+            Elige la fecha de tu cita: <input type="datetime-local" name="date" id="fecha"><br>
+            Qué destinos te interesan: 
+            <input type="radio" name="destination" id="destino">Playa<br>
+            <input type="radio" name="destination" id="destino">Montaña<br>
+            <input type="radio" name="destination" id="destino">Espacio<br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
