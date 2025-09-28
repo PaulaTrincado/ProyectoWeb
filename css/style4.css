@@ -1,0 +1,184 @@
+/* Estilos para la página de cita - basados en style.css */
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #9C999A;
+    padding-top: 80px; /* Para compensar el header fijo */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header y navegación */
+header {
+    background-color: #8C898A;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0 1rem;
+}
+
+/* Formulario */
+form {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* espacio entre los radios */
+}
+
+
+form input[type="text"],
+form input[type="datetime-local"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="radio"] {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grupos de campos del formulario */
+form > br {
+    display: none; /* Ocultamos los <br> originales y usamos CSS para el espaciado */
+}
+
+/* Estilo para los grupos de radio buttons */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+form label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.3rem;
+}
+
+/* Botón de enviar */
+input[type="submit"] {
+    background-color: #8C898A;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 200px;
+}
+
+input[type="submit"]:hover {
+    background-color: #7A7778;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-links li {
+        margin-left: 0;
+    }
+    
+    form {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
