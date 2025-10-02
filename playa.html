@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viajes Diamante</title>
+        <title>Viajes Diamante - Playa</title>
         <link rel="stylesheet" href="css/style3.css">
-        <link rel="shortcut icon" href="images/blue_diamond.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/white_diamond.ico" type="image/x-icon">
     </head>
     <body>
         <!-- Header -->
@@ -14,13 +14,106 @@
                 <nav>
                     <div class="logo">Viajes Diamante</div>
                     <ul class="nav-links">
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li class="dropdown">
+                            <details class="dropdown-details">
+                                <summary class="dropdown-summary">Destinos</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="playa.html">Playa</a></li>
+                                    <li><a href="montana.html">Montaña</a></li>
+                                    <li><a href="espacio.html">Espacio</a></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><a href="cita.html">Pedir cita</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <!-- Resto del contenido de playa.html se mantiene igual -->
+        <!-- Sección principal de playa -->
+        <section id="playa-destacada">
+            <div class="container">
+                <h2>Destinos de Playa</h2>
+                <div class="destino-principal">
+                    <div class="destino-imagen">
+                        <img src="images/playa.jpg" alt="Playa paradisíaca">
+                    </div>
+                    <div class="destino-descripcion">
+                        <h3>Descubre nuestras playas</h3>
+                        <p>Sumérgete en aguas cristalinas y disfruta del sol en nuestras playas seleccionadas cuidadosamente para ofrecerte la mejor experiencia de relax y aventura.</p>
+                        <p>Desde las islas exóticas del Caribe hasta las costas mediterráneas, tenemos el destino perfecto para tus vacaciones soñadas.</p>
+                        <p class="price">Precios desde 50€/noche</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de playa -->
+        <section id="tipos-playa">
+            <div class="container">
+                <h2>Tipos de Destinos Playeros</h2>
+                <div class="playa-grid">
+                    <div class="playa-item">
+                        <img src="images/playa-familiar.jpg" alt="Playa familiar">
+                        <div class="playa-item-content">
+                            <h3>Playas Familiares</h3>
+                            <p>Destinos ideales para viajar con niños, con aguas tranquilas y servicios adaptados para toda la familia.</p>
+                            <p class="price">Desde 60€/noche</p>
+                        </div>
+                    </div>
+                    
+                    <div class="playa-item">
+                        <img src="images/playa-aventura.jpg" alt="Playa de aventura">
+                        <div class="playa-item-content">
+                            <h3>Playas de Aventura</h3>
+                            <p>Para los más activos, con deportes acuáticos, snorkel y exploración de ecosistemas marinos.</p>
+                            <p class="price">Desde 75€/noche</p>
+                        </div>
+                    </div>
+                    
+                    <div class="playa-item">
+                        <img src="images/playa-exclusiva.jpg" alt="Playa exclusiva">
+                        <div class="playa-item-content">
+                            <h3>Playas Exclusivas</h3>
+                            <p>Resorts de lujo con playas privadas y servicios premium para una experiencia inolvidable.</p>
+                            <p class="price">Desde 150€/noche</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinos populares -->
+        <section id="destinos-populares">
+            <div class="container">
+                <h2>Destinos Populares</h2>
+                <div class="destinos-lista">
+                    <div class="destino-popular">
+                        <h3>Caribe</h3>
+                        <p>Playas de arena blanca y aguas turquesas en destinos como República Dominicana, Jamaica y las Bahamas.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Mediterráneo</h3>
+                        <p>Desde las costas españolas hasta las islas griegas, disfruta de la cultura y gastronomía mediterránea.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Sudeste Asiático</h3>
+                        <p>Tailandia, Indonesia y Filipinas te esperan con sus paisajes paradisíacos y cultura fascinante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy</a> 2025 Viajes Diamante - Todos los derechos reservados</p>
+            </div>
+        </footer>
     </body>
 </html>

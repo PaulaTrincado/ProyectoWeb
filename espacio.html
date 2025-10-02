@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viajes Diamante</title>
+        <title>Viajes Diamante - Espacio</title>
         <link rel="stylesheet" href="css/style1.css">
-        <link rel="shortcut icon" href="images/pink_diamond.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/white_diamond.ico" type="image/x-icon">
     </head>
     <body>
         <!-- Header -->
@@ -14,13 +14,106 @@
                 <nav>
                     <div class="logo">Viajes Diamante</div>
                     <ul class="nav-links">
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li class="dropdown">
+                            <details class="dropdown-details">
+                                <summary class="dropdown-summary">Destinos</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="playa.html">Playa</a></li>
+                                    <li><a href="montana.html">Montaña</a></li>
+                                    <li><a href="espacio.html">Espacio</a></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><a href="cita.html">Pedir cita</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <!-- Resto del contenido de espacio.html se mantiene igual -->
+        <!-- Sección principal de espacio -->
+        <section id="espacio-destacado">
+            <div class="container">
+                <h2>Expediciones Espaciales</h2>
+                <div class="destino-principal">
+                    <div class="destino-imagen">
+                        <img src="images/space.jpg" alt="Viaje espacial">
+                    </div>
+                    <div class="destino-descripcion">
+                        <h3>Explora el Cosmos</h3>
+                        <p>Vive la experiencia definitiva de viaje con nuestras expediciones interplanetarias. Desde la órbita terrestre hasta los confines del sistema solar.</p>
+                        <p>Nuestras naves están equipadas con la última tecnología gema para garantizar tu seguridad y comodidad durante todo el viaje.</p>
+                        <p class="price">Precios desde 119.99€/expedición</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de expediciones -->
+        <section id="tipos-espacio">
+            <div class="container">
+                <h2>Tipos de Expediciones</h2>
+                <div class="espacio-grid">
+                    <div class="espacio-item">
+                        <img src="images/orbita-terrestre.jpg" alt="Órbita terrestre">
+                        <div class="espacio-item-content">
+                            <h3>Órbita Terrestre</h3>
+                            <p>Experimenta la ingravidez y contempla la Tierra desde el espacio. Ideal para principiantes en viajes espaciales.</p>
+                            <p class="price">119.99€/expedición</p>
+                        </div>
+                    </div>
+                    
+                    <div class="espacio-item">
+                        <img src="images/estacion-espacial.jpg" alt="Estación espacial">
+                        <div class="espacio-item-content">
+                            <h3>Estación Espacial</h3>
+                            <p>Visita nuestra estación espacial y participa en experimentos científicos en microgravedad.</p>
+                            <p class="price">199.99€/expedición</p>
+                        </div>
+                    </div>
+                    
+                    <div class="espacio-item">
+                        <img src="images/sistema-solar.jpg" alt="Sistema solar">
+                        <div class="espacio-item-content">
+                            <h3>Sistema Solar</h3>
+                            <p>Tour completo por los planetas de nuestro sistema solar. Incluye aterrizaje en Luna y Marte.</p>
+                            <p class="price">299.99€/expedición</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinos populares -->
+        <section id="destinos-populares">
+            <div class="container">
+                <h2>Destinos Estelares</h2>
+                <div class="destinos-lista">
+                    <div class="destino-popular">
+                        <h3>Luna</h3>
+                        <p>Visita los históricos sitios de alunizaje y camina por la superficie lunar con nuestra tecnología de gravedad artificial.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Marte</h3>
+                        <p>Explora el planeta rojo y sus majestuosos cañones. Incluye visita a las bases de investigación gemas.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Cinturón de Asteroides</h3>
+                        <p>Aventúrate entre miles de asteroides y descubre los secretos mineralógicos del sistema solar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy</a> 2025 Viajes Diamante - Todos los derechos reservados</p>
+            </div>
+        </footer>
     </body>
 </html>

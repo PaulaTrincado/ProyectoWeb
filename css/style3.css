@@ -1,0 +1,289 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #E3F2FD; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header y navegación */
+header {
+    background-color: #1976D2; 
+    color: #FFFFFF; 
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #BBDEFB; 
+}
+
+/* Dropdown Styles nativo */
+.dropdown-details {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-summary {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 500;
+}
+
+.dropdown-summary:hover {
+    color: #BBDEFB;
+}
+
+.dropdown-summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-summary::after {
+    content: " ▼";
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+.dropdown-details[open] .dropdown-summary::after {
+    content: " ▲";
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1976D2;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-menu a:hover {
+    background-color: #1565C0;
+    color: #BBDEFB;
+    border-left-color: #BBDEFB;
+}
+
+/* Secciones */
+section {
+    padding: 5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #1565C0; 
+}
+
+/* Destino principal */
+.destino-principal {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.destino-imagen {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.destino-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.destino-descripcion {
+    flex: 1;
+    color: #1565C0;
+}
+
+.destino-descripcion h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #1565C0;
+}
+
+.destino-descripcion p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #424242;
+}
+
+.price {
+    color: #0D47A1; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Tipos de playa */
+.playa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.playa-item {
+    background: #E1F5FE; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #81D4FA;
+}
+
+.playa-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.playa-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.playa-item-content {
+    padding: 1.5rem;
+}
+
+.playa-item h3 {
+    margin-bottom: 0.5rem;
+    color: #1565C0;
+}
+
+.playa-item p {
+    color: #455A64;
+}
+
+/* Destinos populares */
+.destinos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.destino-popular {
+    text-align: center;
+    padding: 2rem;
+    background: #E1F5FE;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #81D4FA;
+}
+
+.destino-popular h3 {
+    margin-bottom: 1rem;
+    color: #1565C0;
+    font-size: 1.4rem;
+}
+
+.destino-popular p {
+    color: #455A64;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #0D47A1; 
+    color: #E1F5FE; 
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #E1F5FE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .destino-principal {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: list-item;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}

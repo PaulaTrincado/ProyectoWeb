@@ -45,20 +45,90 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    position: relative;
 }
 
 .nav-links li {
     margin-left: 1.5rem;
+    position: relative;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    padding: 0.5rem 0;
+    display: block;
 }
 
 .nav-links a:hover {
     color: #FFD700;
+}
+
+/* Dropdown Styles nativo */
+.dropdown-details {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-summary {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+    display: block;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dropdown-summary:hover {
+    color: #FFD700;
+}
+
+/* Ocultar el marker por defecto del summary */
+.dropdown-summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-summary::after {
+    content: " ▼";
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+.dropdown-details[open] .dropdown-summary::after {
+    content: " ▲";
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8C898A;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-menu a:hover {
+    background-color: #7C797A;
+    color: #FFD700;
+    border-left-color: #FFD700;
 }
 
 /* Secciones */
@@ -120,15 +190,30 @@ section h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.destino-item a:hover img {
+    opacity: 0.8;
 }
 
 .menu-item-content {
     padding: 1.5rem;
 }
 
+.destino-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .destino-item h3 {
     margin-bottom: 0.5rem;
     color: black;
+    transition: color 0.3s;
+}
+
+.destino-link:hover h3 {
+    color: #FFD700;
 }
 
 .price {
@@ -168,5 +253,12 @@ footer {
 
     .nav-links {
         display: list-item;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        margin-top: 0;
     }
 }

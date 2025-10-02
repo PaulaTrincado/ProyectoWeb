@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viajes Diamante</title>
+        <title>Viajes Diamante - Montaña</title>
         <link rel="stylesheet" href="css/style2.css">
-        <link rel="shortcut icon" href="images/yellow_diamond.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/white_diamond.ico" type="image/x-icon">
     </head>
     <body>
         <!-- Header -->
@@ -14,13 +14,106 @@
                 <nav>
                     <div class="logo">Viajes Diamante</div>
                     <ul class="nav-links">
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li class="dropdown">
+                            <details class="dropdown-details">
+                                <summary class="dropdown-summary">Destinos</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="playa.html">Playa</a></li>
+                                    <li><a href="montana.html">Montaña</a></li>
+                                    <li><a href="espacio.html">Espacio</a></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><a href="cita.html">Pedir cita</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <!-- Resto del contenido de montana.html se mantiene igual -->
+        <!-- Sección principal de montaña -->
+        <section id="montana-destacada">
+            <div class="container">
+                <h2>Destinos de Montaña</h2>
+                <div class="destino-principal">
+                    <div class="destino-imagen">
+                        <img src="images/montana.jpg" alt="Montaña imponente">
+                    </div>
+                    <div class="destino-descripcion">
+                        <h3>Explora nuestras montañas</h3>
+                        <p>Adéntrate en la naturaleza virgen y descubre paisajes espectaculares en nuestras rutas de montaña cuidadosamente seleccionadas.</p>
+                        <p>Desde los Pirineos hasta los Alpes, tenemos el destino perfecto para los amantes del senderismo, el alpinismo y la naturaleza en estado puro.</p>
+                        <p class="price">Precios desde 25€/día</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de montaña -->
+        <section id="tipos-montana">
+            <div class="container">
+                <h2>Tipos de Destinos de Montaña</h2>
+                <div class="montana-grid">
+                    <div class="montana-item">
+                        <img src="images/montana-senderismo.jpg" alt="Senderismo de montaña">
+                        <div class="montana-item-content">
+                            <h3>Senderismo</h3>
+                            <p>Rutas accesibles para todos los niveles, desde paseos familiares hasta trekking de varios días.</p>
+                            <p class="price">Desde 20€/día</p>
+                        </div>
+                    </div>
+                    
+                    <div class="montana-item">
+                        <img src="images/montana-alpinismo.jpg" alt="Alpinismo">
+                        <div class="montana-item-content">
+                            <h3>Alpinismo</h3>
+                            <p>Para los más aventureros, ascensos guiados a picos emblemáticos con equipos profesionales.</p>
+                            <p class="price">Desde 45€/día</p>
+                        </div>
+                    </div>
+                    
+                    <div class="montana-item">
+                        <img src="images/montana-refugio.jpg" alt="Refugios de montaña">
+                        <div class="montana-item-content">
+                            <h3>Estancias en Refugios</h3>
+                            <p>Experiencias únicas pernoctando en refugios de montaña con vistas impresionantes.</p>
+                            <p class="price">Desde 35€/noche</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinos populares -->
+        <section id="destinos-populares">
+            <div class="container">
+                <h2>Destinos Populares</h2>
+                <div class="destinos-lista">
+                    <div class="destino-popular">
+                        <h3>Pirineos</h3>
+                        <p>La cordillera que separa España y Francia, con paisajes únicos y rutas para todos los niveles.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Alpes</h3>
+                        <p>Las montañas más emblemáticas de Europa, ideales para alpinismo y esquí.</p>
+                    </div>
+                    
+                    <div class="destino-popular">
+                        <h3>Picos de Europa</h3>
+                        <p>Macizo montañoso en el norte de España con rutas espectaculares y naturaleza en estado puro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy</a> 2025 Viajes Diamante - Todos los derechos reservados</p>
+            </div>
+        </footer>
     </body>
 </html>

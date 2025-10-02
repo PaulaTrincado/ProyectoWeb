@@ -15,7 +15,16 @@
                     <div class="logo">Viajes Diamante</div>
                     <ul class="nav-links">
                         <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#destinos">Destinos</a></li>
+                        <li class="dropdown">
+                            <details class="dropdown-details">
+                                <summary class="dropdown-summary">Destinos</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="playa.html">Playa</a></li>
+                                    <li><a href="montana.html">Montaña</a></li>
+                                    <li><a href="espacio.html">Espacio</a></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li><a href="cita.html">Pedir cita</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -49,28 +58,40 @@
                 <h2>Destinos</h2>
                 <div class="destino-grid">
                     <div class="destino-item">
-                        <img src="images/playa.jpg" alt="Destino 1">
+                        <a href="playa.html">
+                            <img src="images/playa.jpg" alt="Destino 1">
+                        </a>
                         <div class="menu-item-content">
-                            <h3>Playa</h3>
+                            <a href="playa.html" class="destino-link">
+                                <h3>Playa</h3>
+                            </a>
                             <p>Descanso a la orilla del mar. De las islas exóticas a las ciudades costeras más famosas.</p>
                             <p class="price">Desde 50€/noche</p>
                         </div>
                     </div>
                     
                     <div class="destino-item">
-                        <img src="images/montana.jpg" alt="Destino 2">
+                        <a href="montana.html">
+                            <img src="images/montana.jpg" alt="Destino 2">
+                        </a>
                         <div class="menu-item-content">
-                            <h3>Montaña</h3>
+                            <a href="montana.html" class="destino-link">
+                                <h3>Montaña</h3>
+                            </a>
                             <p>Lejos de la ciudad. Aventura por las cordilleras y su abundante naturaleza. </p>
                             <p class="price">Desde 25€/día</p>
                         </div>
                     </div>
                     
                     <div class="destino-item">
-                        <img src="images/space.jpg" alt="Destino 3">
+                        <a href="espacio.html">
+                            <img src="images/space.jpg" alt="Destino 3">
+                        </a>
                         <div class="menu-item-content">
-                            <h3>Espacio</h3>
-                            <p></p>
+                            <a href="espacio.html" class="destino-link">
+                                <h3>Espacio</h3>
+                            </a>
+                            <p>Explora las maravillas del cosmos con nuestras expediciones interplanetarias.</p>
                             <p class="price">119.99€/expedición</p>
                         </div>
                     </div>
@@ -109,7 +130,7 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy; 2025 Viajes Diamante - Todos los derechos reservados</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy</a> 2025 Viajes Diamante - Todos los derechos reservados</p>
             </div>
         </footer>
     </body>
