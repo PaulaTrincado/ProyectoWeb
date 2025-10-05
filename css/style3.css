@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header y navegación */
 header {
     background-color: #1976D2; 
     color: #FFFFFF; 
@@ -55,6 +53,8 @@ nav {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
+    padding: 0.5rem 0;
+    display: block;
     font-weight: 500;
 }
 
@@ -62,73 +62,6 @@ nav {
     color: #BBDEFB; 
 }
 
-/* Dropdown Styles nativo */
-.dropdown-details {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-summary {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    padding: 0.5rem 0;
-    display: block;
-    cursor: pointer;
-    list-style: none;
-    font-weight: 500;
-}
-
-.dropdown-summary:hover {
-    color: #BBDEFB;
-}
-
-.dropdown-summary::-webkit-details-marker {
-    display: none;
-}
-
-.dropdown-summary::after {
-    content: " ▼";
-    font-size: 0.7em;
-    margin-left: 5px;
-}
-
-.dropdown-details[open] .dropdown-summary::after {
-    content: " ▲";
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #1976D2;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    list-style: none;
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-}
-
-.dropdown-menu li {
-    margin: 0;
-}
-
-.dropdown-menu a {
-    color: white;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    transition: all 0.3s ease;
-    border-left: 3px solid transparent;
-}
-
-.dropdown-menu a:hover {
-    background-color: #1565C0;
-    color: #BBDEFB;
-    border-left-color: #BBDEFB;
-}
-
-/* Secciones */
 section {
     padding: 5rem 0;
 }
@@ -140,7 +73,6 @@ section h2 {
     color: #1565C0; 
 }
 
-/* Destino principal */
 .destino-principal {
     display: flex;
     align-items: center;
@@ -184,7 +116,6 @@ section h2 {
     font-size: 1.2rem;
 }
 
-/* Tipos de playa */
 .playa-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -224,7 +155,6 @@ section h2 {
     color: #455A64;
 }
 
-/* Destinos populares */
 .destinos-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -251,7 +181,6 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
     background: #0D47A1; 
     color: #E1F5FE; 
@@ -269,14 +198,20 @@ footer a:hover {
     color: #FFFFFF;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .destino-principal {
         flex-direction: column;
     }
 
     .nav-links {
-        display: list-item;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .nav-links li {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 
     section {

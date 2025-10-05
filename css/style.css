@@ -1,6 +1,3 @@
-/* Estilos usados extraídos del CSS original */
-
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header y navegación */
 header {
     background-color: #8C898A;
     color: white;
@@ -45,12 +41,10 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    position: relative;
 }
 
 .nav-links li {
     margin-left: 1.5rem;
-    position: relative;
 }
 
 .nav-links a {
@@ -65,73 +59,6 @@ nav {
     color: #FFD700;
 }
 
-/* Dropdown Styles nativo */
-.dropdown-details {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-summary {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    padding: 0.5rem 0;
-    display: block;
-    cursor: pointer;
-    list-style: none;
-}
-
-.dropdown-summary:hover {
-    color: #FFD700;
-}
-
-/* Ocultar el marker por defecto del summary */
-.dropdown-summary::-webkit-details-marker {
-    display: none;
-}
-
-.dropdown-summary::after {
-    content: " ▼";
-    font-size: 0.7em;
-    margin-left: 5px;
-}
-
-.dropdown-details[open] .dropdown-summary::after {
-    content: " ▲";
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #8C898A;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    list-style: none;
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-}
-
-.dropdown-menu li {
-    margin: 0;
-}
-
-.dropdown-menu a {
-    color: white;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    transition: all 0.3s ease;
-    border-left: 3px solid transparent;
-}
-
-.dropdown-menu a:hover {
-    background-color: #7C797A;
-    color: #FFD700;
-    border-left-color: #FFD700;
-}
-
-/* Secciones */
 section {
     padding: 5rem 0;
 }
@@ -143,7 +70,6 @@ section h2 {
     color: white;
 }
 
-/* Sobre nosotros */
 .about-content {
     display: flex;
     align-items: center;
@@ -167,7 +93,6 @@ section h2 {
     display: block;
 }
 
-/* Destinos */
 .destino-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -237,7 +162,6 @@ section h2 {
     border-radius: 10px;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: white;
@@ -245,20 +169,19 @@ footer {
     padding: 2rem 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
     }
 
     .nav-links {
-        display: list-item;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
     
-    .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        background-color: transparent;
-        margin-top: 0;
+    .nav-links li {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }
