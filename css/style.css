@@ -19,12 +19,10 @@ body {
 
 header {
     background-color: #8C898A;
-    color: white;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
 }
 
 nav {
@@ -36,6 +34,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 
 .nav-links {
@@ -50,13 +49,6 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
-    padding: 0.5rem 0;
-    display: block;
-}
-
-.nav-links a:hover {
-    color: #FFD700;
 }
 
 section {
@@ -83,8 +75,6 @@ section h2 {
 
 .about-image {
     flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .about-image img {
@@ -103,7 +93,6 @@ section h2 {
     background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .destino-item img {
@@ -114,11 +103,6 @@ section h2 {
 
 .menu-item-content {
     padding: 1.5rem;
-}
-
-.destino-link {
-    text-decoration: none;
-    color: inherit;
 }
 
 .destino-item h3 {
@@ -132,11 +116,33 @@ section h2 {
     font-size: 1.2rem;
 }
 
+.tabla-destinos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 0 auto;
+}
+
+.tabla-destinos th,
+.tabla-destinos td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabla-destinos th {
+    background-color: #8C898A;
+    color: white;
+}
+
+.tabla-destinos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
 }
 
 .info-item {
@@ -153,19 +159,27 @@ footer {
     padding: 2rem 0;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
     }
-
+    
     .nav-links {
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
     }
     
-    .nav-links li {
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
+    section {
+        padding: 3rem 0;
+    }
+    
+    .tabla-destinos th,
+    .tabla-destinos td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
     }
 }
